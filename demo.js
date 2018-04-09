@@ -10,7 +10,7 @@
  * 邮件内容说明：用简明的语言描述问题所在，并交代清楚遇到该问题的场景，可附上截屏图片，微信团队会尽快处理你的反馈。
  * 微信分享JSSDK
  */
-wx.ready(function () {
+wx.ready(function (e) {
   // 1 判断当前版本是否支持指定 JS 接口，支持批量判断
   document.querySelector('#checkJsApi').onclick = function () {
     wx.checkJsApi({
